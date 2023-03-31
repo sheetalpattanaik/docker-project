@@ -1,0 +1,23 @@
+version: '3'
+services:
+  train:
+    image: sheetalpattanaik/train:v1
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  movie:
+    image: sheetalpattanaik/movie:v1
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: sheetalpattanaik/recharge:v1
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+
