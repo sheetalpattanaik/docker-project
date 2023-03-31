@@ -3,21 +3,21 @@ services:
   train:
     image: sheetalpattanaik/train:v1
     ports:
-      - "81:80"
+      - "8001:80"
     deploy:
       replicas: 3
 
   movie:
     image: sheetalpattanaik/movie:v1
     ports:
-      - "82:80"
+      - "8002:80"
     deploy:
       replicas: 3
 
   recharge:
     image: sheetalpattanaik/recharge:v1
     ports:
-      - "83:80"
+      - "8003:80"
     deploy:
       replicas: 3
 
